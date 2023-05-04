@@ -1,0 +1,24 @@
+﻿@page
+@model PortfolioAspNetCore.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact page";
+}
+    
+<h3>Contato</h3>
+
+@if (Model.hasData)
+{
+    <p>Hello @Model.firstName @Model.lastName</p>
+    <p>We received your following message correctly.</p>
+    <p>@Model.message</p>
+}
+
+<div class="container">
+    Trabalho como desenvolvedor e adoraria ajudá-lo a obter soluções para seu problema. Então, não exite em entrar em contato!
+    <br /><br />
+    Santa Cruz do Sul<br />
+    Rio Grande do Sul, 96835-422 <br />
+    Brasil <br />
+    55 51 9 9970-8050<br />
+    rafaelv_s@hotmail.com<br />
+</div>
